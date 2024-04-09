@@ -28,8 +28,20 @@ class Circle {
 }
 
 let circle = new Circle (5, "yellow");
-console.log(circle)
-console.log(circle.getColor())
-console.log(circle.getRadius())
-console.log(circle.getArea());
-console.log(circle.getCircum());
+
+console.log("details of Circlr", circle)
+document.getElementById("2a").innerHTML = "details of Circle : " + circle
+
+console.log("Color of the circlr is", circle.getColor())
+document.getElementById("2b").innerHTML = "Color of the circle : " + circle.getColor()
+
+
+console.log("Radius of the circle is", circle.getRadius())
+document.getElementById("2c").innerHTML = "After Set Radius of the circle : " + circle.getRadius()
+
+
+console.log("Area of the circle is" ,circle.getArea());
+document.getElementById("2d").innerHTML = "Area of the circle is " + circle.getArea()
+
+console.log("Circumference of the circle is", circle.getCircum());
+document.getElementById("2e").innerHTML = "Circumference of the circle is " + circle.getCircum()

@@ -14,8 +14,6 @@ class UberPrice {
 
 }
 
-
-
 const calculate = new UberPrice (10, 20, 15, 5);
 const distance = 7;
 const time = 15;
@@ -23,4 +21,5 @@ const waiting = 2;
 
 const totalUberPrice = calculate.priceCalculate(distance,time,waiting);
 console.log("fare ", totalUberPrice);
+document.getElementById("4a").innerHTML = "7km , 15 mins, and 2 mins waiting for UBER chrage is Rs." + totalUberPrice ; 
 

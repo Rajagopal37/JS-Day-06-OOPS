@@ -24,12 +24,10 @@ const movies = [
     new Movie ("Pirates of the Caribbean-3","Walt Disney Pictures")
 ];
 
-const pgMovies = Movie.getPG(movies);         // st
-// const pgMovies1 = casinoRoyale.getPG(movies); // non-st?
+const pgMovies = Movie.getPG(movies);    
 
-console.log(pgMovies);
-// console.log(pgMovies1);
-// console.log(casinoRoyale);
+console.log("PG Rating movies", pgMovies)
+console.log("Result of piece of code that creates an instance of the class" , casinoRoyale);
 
 // static , non
 
