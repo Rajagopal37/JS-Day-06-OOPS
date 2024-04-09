@@ -5,7 +5,7 @@ class Movie {
         this.rating = rating;
     }
 
-    getPG(movies) {
+    static getPG(movies) {
         return movies.filter(movie => (movie.rating == "PG") || (movie.rating == "PG13") );
     }
 }
@@ -24,11 +24,14 @@ const movies = [
     new Movie ("Pirates of the Caribbean-3","Walt Disney Pictures")
 ];
 
-const pgMovies = Movie.getPG(movies);
+const pgMovies = Movie.getPG(movies);         // st
+// const pgMovies1 = casinoRoyale.getPG(movies); // non-st?
 
 console.log(pgMovies);
-console.log(casinoRoyale);
+// console.log(pgMovies1);
+// console.log(casinoRoyale);
 
+// static , non
 
 
 
